@@ -1,0 +1,13 @@
+name: A callable, reusable workflow
+
+on: [
+  workflow_dispatch,
+  push,
+  workflow_call
+]
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo hi
